@@ -3,7 +3,7 @@ const box = document.querySelectorAll('.alertBox');
 function openBox() {
   box.forEach(function(loot) {
     loot.style.display = 'block';
-  })
+  }) 
 }
 
 const cBtn1 = document.getElementById('c-btn1');
