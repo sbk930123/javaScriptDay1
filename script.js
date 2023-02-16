@@ -6,18 +6,17 @@ function openBox() {
   }) 
 }
 
-const cBtn1 = document.getElementById('c-btn1');
-const cBtn2 = document.getElementById('c-btn2');
-const cBtn3 = document.getElementById('c-btn3');
+const cBtns = document.querySelectorAll('.c-btn');
 
-cBtn1.addEventListener('click', function() {
-  this.parentElement.style.display = 'none';
-})
+cBtns.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    this.parentElement.style.display = 'none';
+  });
+});
 
-cBtn2.addEventListener('click', function() {
-  this.parentElement.style.display = 'none';
-})
+const colorsArray = [
+  ['red', 'blue', 'pink', 'yellow']
+]
+const materialsArray = ['plastic', 'paper']
 
-cBtn3.addEventListener('click', function() {
-  this.parentElement.style.display = 'none';
-})
+const value = 10;
